@@ -11,6 +11,13 @@ Repositorio con ejemplos prácticos de conceptos clave de Spring Framework.
 * Annotations
 * Configuración de Spring
 
+* ## Estructura
+
+- ioc/
+- iod/
+- annotations/
+- configuracion/
+
 ## Tecnologías
 
 * Java
@@ -20,6 +27,14 @@ Repositorio con ejemplos prácticos de conceptos clave de Spring Framework.
 ## Objetivo
 
 Aprender los fundamentos de Spring antes de desarrollar aplicaciones completas.
+
+## Cómo ejecutar
+
+Cada carpeta contiene un proyecto independiente.
+
+Ejecutar con Maven:
+
+mvn clean install
 
 
 👨‍💻 Autor
