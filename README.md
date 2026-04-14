@@ -20,3 +20,7 @@ Repositorio con ejemplos prácticos de conceptos clave de Spring Framework.
 ## Objetivo
 
 Aprender los fundamentos de Spring antes de desarrollar aplicaciones completas.
+
+
+👨‍💻 Autor
+Javier Roldán Pomareta
