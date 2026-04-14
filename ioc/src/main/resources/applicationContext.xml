@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="
+       http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd">
+
+<!-- Este es el bean Grupo gestionado por Spring -->
+<!-- Dijiste en la clase que pusieramos el scope pero no lo he puesto porque es singleton
+	 y no hace falta porque es el predefinido -->
+    <bean id="grupo" class="com.accenture.IoC.Grupo"> 
+    <property name="nombre" value="Metallica"/>
+    <property name="origen" value="Estados Unidos"/>
+    <property name="creacion" value="1981"/>
+    <property name="genero" value="Heavy Metal"/>
+    </bean>
+
+</beans>
