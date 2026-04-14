@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 
+         http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+  <modelVersion>4.0.0</modelVersion>
+
+  <groupId>com.javi</groupId>
+  <artifactId>JavaSpringConfigClaseJava</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <name>JavaSpringConfigClaseJava</name>
+  <url>http://www.example.com</url>
+
+  <properties>
+    <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    <maven.compiler.release>17</maven.compiler.release>
+  </properties>
+
+  <!-- Dependencias de Spring -->
+  <dependencies>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>5.3.30</version>
+    </dependency>
+  </dependencies>
+
+</project>
+
+<!--este le hice con archetype para probar por eso sale toda la plantilla larga pero borré cosas porque dijiste que limpiaramos
+el pom, he quitado los pluggins, lo de test y lo que sobraba-->
+
+  
