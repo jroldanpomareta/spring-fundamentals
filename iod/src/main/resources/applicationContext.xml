@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<beans xmlns="http://www.springframework.org/schema/beans"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns:context="http://www.springframework.org/schema/context"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+       http://www.springframework.org/schema/beans/spring-beans.xsd
+       http://www.springframework.org/schema/context
+       http://www.springframework.org/schema/context/spring-context.xsd">
+
+<context:property-placeholder location="classpath:datosGrupo.properties"/>
+
+<!-- se crean los bean de Componente -->
+<bean id="hetfield" class="com.accenture.grupos.Componente">
+    <property name="nombre" value="James Hetfield"/>
+    <property name="instrumento" value="Voz"/>
+</bean>
+
+<bean id="hammett" class="com.accenture.grupos.Componente">
+    <property name="nombre" value="Kirk Hammett"/>
+    <property name="instrumento" value="Guitarra"/>
+</bean>
+
+<bean id="burton" class="com.accenture.grupos.Componente">
+    <property name="nombre" value="Cliff Burton"/>
+    <property name="instrumento" value="Bajo"/>
+</bean>
+
+<bean id="ulrich" class="com.accenture.grupos.Componente">
+    <property name="nombre" value="Lars Ulrich"/>
+    <property name="instrumento" value="Bateria"/>
+</bean>
+
+<!-- se crea el bean de Grupo -->
+<bean id="grupo" class="com.accenture.grupos.Grupo">
+
+<!-- aquí se inyectan los valores del properties -->
+    <property name="nombre" value="${nombre}"/>
+    <property name="creacion" value="${creacion}"/>
+    <property name="origen" value="${origen}"/>
+    <property name="genero" value="${genero}"/>
+
+<!-- aquí se inyecta la lista de componentes -->
+    <property name="componentes">
+        <list>
+            <ref bean="hetfield"/>
+            <ref bean="hammett"/>
+            <ref bean="burton"/>
+            <ref bean="ulrich"/>
+        </list>
+    </property>
+
+</bean>
+
+
+
+</beans>
