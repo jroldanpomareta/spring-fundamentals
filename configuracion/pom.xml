@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+    <modelVersion>4.0.0</modelVersion>
+
+    <groupId>com.accenture</groupId>
+    <artifactId>JavaSpringEventosMusicales</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+
+<!--este le hice sin archetype usando otra vez Maven simple por eso no sale toda la plantilla del pom 
+ como en el anterior y sólo pone lo básico porque es demasiado lío y no hace falta-->
+<!--aquí se ponen las dependencias de Spring-->
+    <dependencies>
+        <dependency>
+            <groupId>org.springframework</groupId>
+            <artifactId>spring-context</artifactId>
+            <version>5.3.30</version>
+        </dependency>
+
+     <!-- hay que poner estas dependencias para usar @Inject -->
+         <dependency>
+            <groupId>javax.inject</groupId>
+            <artifactId>javax.inject</artifactId>
+            <version>1</version>
+        </dependency>
+    
+    </dependencies>
+
+</project>
